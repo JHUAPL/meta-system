@@ -1,0 +1,285 @@
+# KrakenUniq v0.5.8 DATE:2020-08-28T16:56:45Z DB:/db DB_SIZE:263628294448 WD:/
+# CL:perl /usr/local/bin/krakenuniq --db /db --threads 10 --fastq-input /data/5f4936fa3783b2925ad11aac/miseq/simulated.fastq --output /data/5f4936fa3783b2925ad11aac/miseq/krakenuniq/krakenuniq.result --report-file /data/5f4936fa3783b2925ad11aac/miseq/krakenuniq/krakenuniq.report
+ps -o args= 1
+
+%	reads	taxReads	kmers	dup	cov	taxID	rank	taxName
+0.01	8	8	5284864	1.04	0.1973	0	no rank	unclassified
+99.99	79986	57	12381889	1.31	0.0005643	1	no rank	root
+99.92	79929	0	12352493	1.31	0.0005688	131567	no rank	  cellular organisms
+99.92	79929	29	12352493	1.31	0.0005918	2	superkingdom	    Bacteria
+69.91	55923	1	8537140	1.32	0.001103	1783272	no rank	      Terrabacteria group
+49.9	39921	4	6323933	1.27	0.002083	1239	phylum	        Firmicutes
+39.9	31917	8	4895481	1.31	0.002244	91061	class	          Bacilli
+39.89	31909	3	4892341	1.3	0.003239	1385	order	            Bacillales
+29.98	23982	321	3683283	1.3	0.005321	186817	family	              Bacillaceae
+29.57	23656	457	2897635	1.31	0.005891	1386	genus	                Bacillus
+19.05	15238	9981	1220957	1.32	0.01225	86661	species group	                  Bacillus cereus group
+5.673	4538	4498	131081	1.31	0.08704	1392	species	                    Bacillus anthracis
+0.03125	25	25	426	1.23	0.2333	260799	no rank	                      Bacillus anthracis str. Sterne
+0.01	8	8	200	1.07	0.2755	198094	no rank	                      Bacillus anthracis str. Ames
+0.00375	3	3	37	1	0.003179	768494	no rank	                      Bacillus anthracis str. H9401
+0.00125	1	1	31	1	0.009383	673518	no rank	                      Bacillus anthracis str. A16R
+0.00125	1	1	10	1	0.003463	1452727	no rank	                      Bacillus anthracis str. Turkey32
+0.00125	1	1	7	1	0.006029	261591	no rank	                      Bacillus anthracis str. Vollum
+0.00125	1	1	1	1	0.0005429	743835	no rank	                      Bacillus anthracis str. A16
+0.32	256	159	3247	1	0.0001642	1396	species	                    Bacillus cereus
+0.0275	22	22	267	1.03	0.0002926	288681	no rank	                      Bacillus cereus E33L
+0.01625	13	0	236	1	0.0005846	1179100	no rank	                      Bacillus cereus biovar anthracis
+0.01625	13	13	236	1	0.0005846	637380	no rank	                        Bacillus cereus biovar anthracis str. CI
+0.01125	9	9	122	1	0.0002671	526977	no rank	                      Bacillus cereus ATCC 4342
+0.01125	9	9	115	1	0.000207	1217984	no rank	                      Bacillus cereus FRI-35
+0.01125	9	9	49	1	9.164e-05	222523	no rank	                      Bacillus cereus ATCC 10987
+0.007501	6	6	97	1	0.0002373	361100	no rank	                      Bacillus cereus Q1
+0.007501	6	6	78	1	0.0002158	1454382	no rank	                      Bacillus cereus D17
+0.00625	5	5	8	1.62	1.792e-05	1003239	no rank	                      Bacillus cereus C1L
+0.005	4	4	72	1	0.0002884	572264	no rank	                      Bacillus cereus 03BB102
+0.005	4	4	38	1	0.0001845	405535	no rank	                      Bacillus cereus AH820
+0.00375	3	3	23	1	3.643e-05	451709	no rank	                      Bacillus cereus 03BB108
+0.00375	3	3	15	1	9.937e-05	347495	no rank	                      Bacillus cereus F837/76
+0.00375	3	3	7	1	3.099e-05	226900	no rank	                      Bacillus cereus ATCC 14579
+0.00125	1	1	13	1	6.237e-05	405532	no rank	                      Bacillus cereus B4264
+0.2013	161	133	2183	1	0.0001028	1428	species	                    Bacillus thuringiensis
+0.01875	15	15	154	1	9.694e-05	1195464	no rank	                      Bacillus thuringiensis MC28
+0.00375	3	0	45	1	0.0001246	29339	no rank	                      Bacillus thuringiensis serovar kurstaki
+0.00125	1	1	38	1	0.003715	1279365	no rank	                        Bacillus thuringiensis serovar kurstaki str. HD73
+0.00125	1	1	4	1	5.796e-05	570416	no rank	                        Bacillus thuringiensis serovar kurstaki str. YBT-1520
+0.00125	1	1	3	1	1.479e-05	714359	no rank	                        Bacillus thuringiensis BMB171
+0.00375	3	3	45	1	8.391e-05	1423143	no rank	                      Bacillus thuringiensis Bt18247
+0.00375	3	3	5	1	9.064e-06	1218175	no rank	                      Bacillus thuringiensis HD-771
+0.00125	1	1	27	1	0.0003694	1417985	no rank	                      Bacillus thuringiensis LM1212
+0.00125	1	1	9	1	1.805e-05	1442	no rank	                      Bacillus thuringiensis serovar tolworthi
+0.00125	1	1	2	1	5.851e-06	180850	no rank	                      Bacillus thuringiensis serovar indiana
+0.00125	1	1	2	1	7.298e-06	29338	no rank	                      Bacillus thuringiensis serovar galleriae
+0.08751	70	67	581	1	5.95e-05	1405	species	                    Bacillus mycoides
+0.00375	3	3	25	1	2.494e-05	315730	no rank	                      Bacillus mycoides KBAB4
+0.06	48	48	509	1	0.0002014	2026189	species	                    Bacillus albus
+0.05125	41	41	463	1	0.0001585	2026191	species	                    Bacillus luti
+0.0475	38	38	446	1	0.0002167	2026190	species	                    Bacillus mobilis
+0.04625	37	37	347	1	0.000164	1890302	species	                    Bacillus wiedmannii
+0.02625	21	21	135	1	2.655e-05	64104	species	                    Bacillus pseudomycoides
+0.0175	14	14	137	1	2.919e-05	580165	species	                    Bacillus cytotoxicus
+0.01375	11	11	193	1	0.0004229	1892404	species	                    Bacillus sp. ABP14
+0.01375	11	11	166	1	0.0004834	2053832	species	                    Bacillus sp. HBCD-sjtu
+0.0125	10	10	84	1	0.0001029	2026186	species	                    Bacillus paranthracis
+0.00125	1	1	4	1	5.456e-06	2217832	species	                    Bacillus sp. JAS24-2
+9.929	7943	11	1216500	1.26	0.01912	653685	species group	                  Bacillus subtilis group
+9.901	7920	1817	1196791	1.26	0.1795	1452	species	                    Bacillus atrophaeus
+7.629	6103	6103	295692	1.2	0.3112	720555	no rank	                      Bacillus atrophaeus 1942
+0.008751	7	4	110	1	6.306e-06	1423	species	                    Bacillus subtilis
+0.0025	2	0	30	1	2.511e-05	135461	subspecies	                      Bacillus subtilis subsp. subtilis
+0.00125	1	1	18	1	0.001126	1302650	no rank	                        Bacillus subtilis subsp. subtilis str. BAB-1
+0.00125	1	1	2	1	0.0001691	1404258	no rank	                        Bacillus subtilis subsp. subtilis str. OH 131.1
+0.00125	1	1	10	1	5.835e-06	483913	subspecies	                      Bacillus subtilis subsp. inaquosorum
+0.00625	5	0	76	1	4.277e-06	1938374	species subgroup	                    Bacillus amyloliquefaciens group
+0.00375	3	3	17	1	2.219e-06	492670	species	                      Bacillus velezensis
+0.0025	2	1	48	1	7.779e-06	1390	species	                      Bacillus amyloliquefaciens
+0.00125	1	1	8	1	0.0001913	1292358	no rank	                        Bacillus amyloliquefaciens KHG19
+0.0125	10	0	681	1	1.221e-05	185979	no rank	                  unclassified Bacillus
+0.005	4	4	284	1	0.0003095	2529386	species	                    Bacillus sp. SYJ
+0.00375	3	3	286	1	0.0002345	2499213	species	                    Bacillus sp. BD59S
+0.00125	1	1	46	1	9.802e-05	2608254	species	                    Bacillus sp. BS98
+0.00125	1	1	7	1	2.019e-06	98228	species	                    Bacillus sp. OxB-1
+0.00125	1	1	5	1	1.259e-06	2587848	species	                    Bacillus sp. THAF10
+0.0025	2	2	15	1	3.371e-06	199441	species	                  Bacillus krulwichiae
+0.00125	1	1	27	1	2.152e-06	1408	species	                  Bacillus pumilus
+0.00125	1	1	24	1	5.668e-06	1783501	species	                  Bacillus freudenreichii
+0.00125	1	1	17	1	2.496e-06	1664069	species	                  Bacillus glycinifermentans
+0.00125	1	1	9	1	1.415e-06	561879	species	                  Bacillus safensis
+0.00125	1	1	5	1	9.933e-07	152268	species	                  Bacillus litoralis
+0.00125	1	1	1	1	2.185e-07	859143	species	                  Bacillus kochii
+0.00125	1	0	29	1	1.042e-06	129337	genus	                Geobacillus
+0.00125	1	0	8	1	1.309e-06	2642459	no rank	                  unclassified Geobacillus
+0.00125	1	1	8	1	2.096e-05	1233873	species	                    Geobacillus sp. GHH01
+0.00125	1	0	26	1	5.958e-06	1906945	genus	                Parageobacillus
+0.00125	1	0	26	1	5.958e-06	1426	species	                  Parageobacillus thermoglucosidasius
+0.00125	1	1	26	1	3.563e-05	634956	no rank	                    Parageobacillus thermoglucosidasius C56-YS93
+0.00125	1	0	17	1	2.101e-06	1329200	genus	                Fictibacillus
+0.00125	1	1	17	1	4.337e-06	255247	species	                  Fictibacillus arsenicus
+0.00125	1	0	7	1	1.95e-06	197483	no rank	                unclassified Bacillaceae
+0.00125	1	1	1	1	8.851e-05	2654284	species	                  Bacillaceae bacterium C02
+0.00125	1	1	3	1	4.259e-07	2685905	genus	                Salicibibacter
+9.904	7923	2	1180548	1.32	0.007909	90964	family	              Staphylococcaceae
+9.902	7921	360	1177575	1.32	0.008707	1279	genus	                Staphylococcus
+9.432	7545	7543	1098853	1.3	0.1696	1282	species	                  Staphylococcus epidermidis
+0.0025	2	2	12	1	8.447e-05	1449752	no rank	                    Staphylococcus epidermidis PM221
+0.015	12	8	179	1	1.265e-05	1280	species	                  Staphylococcus aureus
+0.00375	3	2	43	1	5.635e-05	46170	subspecies	                    Staphylococcus aureus subsp. aureus
+0.00125	1	1	3	1	0.0009186	1343064	no rank	                      Staphylococcus aureus subsp. aureus ST772-MRSA-V
+0.00125	1	1	5	1	0.007364	703339	no rank	                    Staphylococcus aureus 04-02981
+0.00125	1	0	55	1	1.742e-05	29388	species	                  Staphylococcus capitis
+0.00125	1	1	4	1	9.316e-06	72758	subspecies	                    Staphylococcus capitis subsp. capitis
+0.00125	1	1	54	1	2.534e-05	29379	species	                  Staphylococcus auricularis
+0.00125	1	1	23	1	6.495e-06	1283	species	                  Staphylococcus haemolyticus
+0.00125	1	1	11	1	3.185e-06	28035	species	                  Staphylococcus lugdunensis
+0.00125	1	0	55	1	1.183e-07	186822	family	              Paenibacillaceae
+0.00125	1	0	38	1	1.002e-07	44249	genus	                Paenibacillus
+0.00125	1	1	6	1	2.747e-07	1406	species	                  Paenibacillus polymyxa
+10	8000	0	1407355	1.14	0.001929	186801	class	          Clostridia
+10	8000	1	1407355	1.14	0.00218	186802	order	            Clostridiales
+9.998	7998	1	1406397	1.14	0.005627	31979	family	              Clostridiaceae
+9.996	7996	1151	1405639	1.14	0.006574	1485	genus	                Clostridium
+8.527	6821	1569	631198	1.13	0.05644	1520	species	                  Clostridium beijerinckii
+6.554	5243	5237	349969	1.14	0.2376	290402	no rank	                    Clostridium beijerinckii NCIMB 8052
+0.007501	6	6	153	1.2	0.1873	864803	no rank	                      Clostridium beijerinckii ATCC 35702
+0.01125	9	9	205	1	0.0001944	1428454	no rank	                    Clostridium beijerinckii NRRL B-598
+0.00625	5	5	224	1	0.0002469	223919	species	                  Clostridium diolis
+0.00375	3	2	32	1	9.562e-07	1491	species	                  Clostridium botulinum
+0.00125	1	1	1	1	6.646e-07	1415774	no rank	                    Clostridium botulinum 202F
+0.00375	3	3	24	1	2.828e-06	1492	species	                  Clostridium butyricum
+0.0025	2	2	50	1	5.874e-06	36745	species	                  Clostridium saccharoperbutylacetonicum
+0.0025	2	2	21	1	7.641e-06	182773	species	                  Clostridium isatidis
+0.0025	2	0	8	1	1.778e-06	217159	species	                  Clostridium carboxidivorans
+0.0025	2	2	8	1	1.778e-06	536227	no rank	                    Clostridium carboxidivorans P7
+0.00125	1	1	81	1	1.527e-05	169679	species	                  Clostridium saccharobutylicum
+0.00125	1	0	14	1	4.926e-07	2614128	no rank	                  unclassified Clostridium
+0.00125	1	1	2	1	4.544e-07	755731	species	                    Clostridium sp. BNL1100
+0.00125	1	1	10	1	1.955e-06	1561	species	                  Clostridium baratii
+0.00125	1	1	9	1	7.953e-07	1502	species	                  Clostridium perfringens
+0.00125	1	0	5	1	1.079e-06	238834	species	                  Clostridium estertheticum
+0.00125	1	1	5	1	1.079e-06	1552	subspecies	                    Clostridium estertheticum subsp. estertheticum
+0.00125	1	0	3	1	5.892e-07	1493	species	                  Clostridium cellulovorans
+0.00125	1	1	3	1	5.892e-07	573061	no rank	                    Clostridium cellulovorans 743B
+0.00125	1	1	2	1	4.307e-07	29341	species	                  Clostridium argentinense
+0.00125	1	0	13	1	4.959e-06	1769729	genus	                Hathewaya
+0.00125	1	1	13	1	4.959e-06	1498	species	                  Hathewaya histolytica
+0.00125	1	0	14	1	1.067e-07	186803	family	              Lachnospiraceae
+0.00125	1	1	6	1	8.992e-07	698776	genus	                Cellulosilyticum
+20	16001	0	2271698	1.42	0.0005833	201174	phylum	        Actinobacteria
+20	16001	0	2270554	1.42	0.0005982	1760	class	          Actinobacteria
+10	8000	0	1156773	1.38	0.006805	85009	order	            Propionibacteriales
+10	8000	0	1156773	1.38	0.01512	31957	family	              Propionibacteriaceae
+10	8000	26	1153678	1.38	0.1096	1912216	genus	                Cutibacterium
+9.968	7974	7473	1126442	1.38	0.2611	1747	species	                  Cutibacterium acnes
+0.6225	498	0	8307	1.36	0.4774	1905725	subspecies	                    Cutibacterium acnes subsp. defendens
+0.6225	498	498	8307	1.36	0.4774	1091045	no rank	                      Cutibacterium acnes subsp. defendens ATCC 11828
+0.00125	1	1	26	1	0.003747	1031709	no rank	                    Cutibacterium acnes 6609
+0.00125	1	1	2	1	5.108e-05	1734925	subspecies	                    Cutibacterium acnes subsp. acnes
+0.00125	1	1	1	1	2.653e-05	1234380	no rank	                    Cutibacterium acnes C1
+10	8000	0	1111325	1.44	0.01663	85004	order	            Bifidobacteriales
+10	8000	0	1111325	1.44	0.01663	31953	family	              Bifidobacteriaceae
+10	8000	207	1110541	1.44	0.01888	1678	genus	                Bifidobacterium
+9.732	7785	4266	952184	1.44	0.2176	1680	species	                  Bifidobacterium adolescentis
+4.399	3519	3519	160024	1.4	0.5408	367928	no rank	                    Bifidobacterium adolescentis ATCC 15703
+0.00375	3	1	333	1	8.219e-05	1686	species	                  Bifidobacterium catenulatum
+0.0025	2	1	175	1	6.478e-05	630129	subspecies	                    Bifidobacterium catenulatum subsp. kashiwanohense
+0.00125	1	1	89	1	7.555e-05	1447716	no rank	                      Bifidobacterium kashiwanohense PV20-2
+0.0025	2	2	107	1	4.344e-05	1689	species	                  Bifidobacterium dentium
+0.0025	2	1	71	1	9.757e-06	216816	species	                  Bifidobacterium longum
+0.00125	1	1	9	1	1.208e-05	1682	subspecies	                    Bifidobacterium longum subsp. infantis
+0.00125	1	0	80	1	3.285e-05	1683	species	                  Bifidobacterium angulatum
+0.00125	1	1	10	1	1.722e-05	518635	no rank	                    Bifidobacterium angulatum DSM 20098 = JCM 7096
+0.00125	1	0	76	1	1.086e-07	85006	order	            Micrococcales
+0.00125	1	0	5	1	1.322e-07	85016	family	              Cellulomonadaceae
+0.00125	1	0	5	1	1.653e-07	1707	genus	                Cellulomonas
+0.00125	1	0	5	1	1.313e-06	1711	species	                  Cellulomonas flavigena
+0.00125	1	1	5	1	1.313e-06	446466	no rank	                    Cellulomonas flavigena DSM 20109
+19.97	15978	34	2646123	1.22	0.0002525	1224	phylum	      Proteobacteria
+9.997	7997	0	1308391	1.23	0.0004898	28211	class	        Alphaproteobacteria
+9.996	7996	0	1290597	1.23	0.002557	204455	order	          Rhodobacterales
+9.996	7996	4	1290597	1.23	0.002647	31989	family	            Rhodobacteraceae
+9.991	7992	6	1262582	1.22	0.04783	1060	genus	              Rhodobacter
+9.983	7986	1200	1245428	1.22	0.1054	1063	species	                Rhodobacter sphaeroides
+8.474	6779	6779	401468	1.18	0.3091	349101	no rank	                  Rhodobacter sphaeroides ATCC 17029
+0.008751	7	7	471	1	0.000268	557760	no rank	                  Rhodobacter sphaeroides KD131
+0.00125	1	0	50	1	1.259e-07	204457	order	          Sphingomonadales
+0.00125	1	0	36	1	1.129e-07	41297	family	            Sphingomonadaceae
+0.00125	1	0	2	1	1.956e-08	13687	genus	              Sphingomonas
+0.00125	1	0	2	1	3.423e-08	196159	no rank	                unclassified Sphingomonas
+0.00125	1	1	2	1	4.649e-07	2681549	species	                  Sphingomonas sp. LMO-1
+9.927	7941	47	1318335	1.21	0.0002588	1236	class	        Gammaproteobacteria
+9.862	7889	0	1309550	1.21	0.0009881	72274	order	          Pseudomonadales
+9.862	7889	1	1309550	1.21	0.005316	468	family	            Moraxellaceae
+9.861	7888	1831	1306909	1.21	0.006813	469	genus	              Acinetobacter
+7.534	6027	264	365139	1.22	0.0086	909768	species group	                Acinetobacter calcoaceticus/baumannii complex
+7.114	5691	5670	297471	1.23	0.01989	470	species	                  Acinetobacter baumannii
+0.015	12	12	1093	1.09	0.09359	400667	no rank	                    Acinetobacter baumannii ATCC 17978
+0.007501	6	6	88	1	0.0004103	1400867	no rank	                    Acinetobacter baumannii ZW85-1
+0.00125	1	1	8	1	0.0007665	1096997	no rank	                    Acinetobacter baumannii BJAB0868
+0.00125	1	1	1	1	4.755e-05	945556	no rank	                    Acinetobacter baumannii D1279779
+0.00125	1	1	1	1	0.0006592	1455315	no rank	                    Acinetobacter baumannii LAC-4
+0.03875	31	29	682	1	9.946e-05	106654	species	                  Acinetobacter nosocomialis
+0.0025	2	2	37	1	8.461e-05	1343071	no rank	                    Acinetobacter nosocomialis M2
+0.0325	26	24	409	1	4.352e-05	48296	species	                  Acinetobacter pittii
+0.0025	2	2	46	1	7.922e-05	871585	no rank	                    Acinetobacter pittii PHEA-2
+0.01	8	8	238	1	4.495e-05	471	species	                  Acinetobacter calcoaceticus
+0.008751	7	7	149	1	7.132e-05	1785128	species	                  Acinetobacter lactucae
+0.007501	6	0	92	1.04	2.735e-06	196816	no rank	                unclassified Acinetobacter
+0.0025	2	2	17	1	7.379e-06	2004644	species	                  Acinetobacter sp. WCHA45
+0.0025	2	2	13	1	3.836e-06	1758189	species	                  Acinetobacter sp. ACNIH2
+0.00125	1	1	9	1	3.381e-06	1646498	species	                  Acinetobacter sp. TTH0-4
+0.00125	1	1	5	1	2.002e-06	2662362	species	                  Acinetobacter sp. dk386
+0.005	4	4	97	1.07	1.132e-05	756892	species	                Acinetobacter indicus
+0.00375	3	3	20	1	6.4e-06	2136182	species	                Acinetobacter cumulans
+0.0025	2	2	78	1	1.022e-05	29430	species	                Acinetobacter haemolyticus
+0.0025	2	0	15	1	4.544e-06	202950	species	                Acinetobacter baylyi
+0.0025	2	2	15	1	4.544e-06	62977	no rank	                  Acinetobacter baylyi ADP1
+0.0025	2	2	7	1	6.547e-06	202956	species	                Acinetobacter towneri
+0.00125	1	0	43	1	1.845e-05	1148157	species	                Acinetobacter oleivorans
+0.00125	1	1	43	1	1.845e-05	436717	no rank	                  Acinetobacter oleivorans DR1
+0.00125	1	1	31	1	6.765e-06	40215	species	                Acinetobacter junii
+0.00125	1	1	25	1	3.267e-06	40214	species	                Acinetobacter johnsonii
+0.00125	1	1	18	1	5.057e-06	1789224	species	                Acinetobacter larvae
+0.00125	1	1	16	1	4.591e-06	134534	species	                Acinetobacter gyllenbergii
+0.00125	1	1	12	1	2.776e-06	106649	species	                Acinetobacter guillouiae
+0.00125	1	1	9	1	2.917e-06	108980	species	                Acinetobacter ursingii
+0.00125	1	1	8	1	1.918e-06	106648	species	                Acinetobacter bereziniae
+0.00125	1	1	4	1	8.231e-07	40216	species	                Acinetobacter radioresistens
+0.00125	1	1	3	1	9.092e-07	487316	species	                Acinetobacter soli
+0.00125	1	1	2	1	7.056e-07	1324350	species	                Acinetobacter equi
+0.00375	3	0	125	1	8.674e-08	91347	order	          Enterobacterales
+0.0025	2	0	57	1	7.964e-08	543	family	            Enterobacteriaceae
+0.00125	1	0	18	1	2.904e-07	590	genus	              Salmonella
+0.00125	1	0	18	1	3.504e-07	28901	species	                Salmonella enterica
+0.00125	1	0	3	1	1.842e-07	59201	subspecies	                  Salmonella enterica subsp. enterica
+0.00125	1	1	3	1	3.662e-05	2583588	no rank	                    Salmonella enterica subsp. enterica serovar 1,4,[5],12:i:-
+0.00125	1	0	3	1	2.874e-08	570	genus	              Klebsiella
+0.00125	1	1	3	1	1.304e-07	573	species	                Klebsiella pneumoniae
+0.00125	1	0	26	1	1.935e-07	1903414	family	            Morganellaceae
+0.00125	1	1	10	1	2.312e-07	586	genus	              Providencia
+0.00125	1	0	32	1	2.811e-07	135624	order	          Aeromonadales
+0.00125	1	0	32	1	2.89e-07	84642	family	            Aeromonadaceae
+0.00125	1	0	32	1	3.407e-07	642	genus	              Aeromonas
+0.00125	1	1	31	1	8.635e-06	648	species	                Aeromonas caviae
+0.00125	1	0	16	1	2.772e-08	135622	order	          Alteromonadales
+0.00125	1	0	6	1	3.093e-08	72275	family	            Alteromonadaceae
+0.00125	1	0	6	1	9.081e-08	226	genus	              Alteromonas
+0.00125	1	1	3	1	2.144e-07	28108	species	                Alteromonas macleodii
+0.007501	6	0	215	1	1.136e-07	28216	class	        Betaproteobacteria
+0.005	4	1	59	1	7.196e-07	206389	order	          Rhodocyclales
+0.0025	2	0	20	1	1.247e-06	75787	family	            Rhodocyclaceae
+0.0025	2	0	17	1	5.094e-06	1911577	genus	              Oryzomicrobium
+0.0025	2	2	17	1	5.094e-06	1735038	species	                Oryzomicrobium terrae
+0.00125	1	0	7	1	9.406e-07	2008795	family	            Azonexaceae
+0.00125	1	0	7	1	9.406e-07	73029	genus	              Dechloromonas
+0.00125	1	0	7	1	1.622e-06	259537	species	                Dechloromonas aromatica
+0.00125	1	1	7	1	1.622e-06	159087	no rank	                  Dechloromonas aromatica RCB
+0.00125	1	0	105	1	6.729e-08	80840	order	          Burkholderiales
+0.00125	1	0	64	1	2.778e-07	506	family	            Alcaligenaceae
+0.00125	1	0	42	1	5.377e-07	517	genus	              Bordetella
+0.00125	1	1	31	1	6.701e-06	123899	species	                Bordetella trematum
+0.00125	1	0	29	1	2.069e-07	206351	order	          Neisseriales
+0.00125	1	0	26	1	3.841e-07	1499392	family	            Chromobacteriaceae
+0.00125	1	0	10	1	2.759e-07	90153	no rank	              Chromobacterium group
+0.00125	1	0	6	1	1.841e-07	535	genus	                Chromobacterium
+0.00125	1	1	6	1	5.013e-06	1778675	species	                  Chromobacterium rhizoryzae
+9.999	7999	0	1334529	1.21	0.0007851	1783270	no rank	      FCB group
+9.999	7999	0	1334529	1.21	0.0007957	68336	no rank	        Bacteroidetes/Chlorobi group
+9.999	7999	0	1334529	1.21	0.0008197	976	phylum	          Bacteroidetes
+9.999	7999	0	1333595	1.21	0.004987	200643	class	            Bacteroidia
+9.999	7999	41	1333595	1.21	0.005666	171549	order	              Bacteroidales
+9.947	7957	0	1313036	1.21	0.01415	815	family	                Bacteroidaceae
+9.947	7957	466	1313036	1.21	0.01415	816	genus	                  Bacteroides
+9.353	7482	2771	837564	1.18	0.1974	821	species	                    Bacteroides vulgatus
+5.889	4711	4711	323211	1.16	0.274	435590	no rank	                      Bacteroides vulgatus ATCC 8482
+0.005	4	2	1089	1	0.0002623	357276	species	                    Bacteroides dorei
+0.0025	2	2	139	1	0.0001649	997877	no rank	                      Bacteroides dorei CL03T12C01
+0.00125	1	1	35	1	3.946e-06	28116	species	                    Bacteroides ovatus
+0.00125	1	1	13	1	3.044e-06	47678	species	                    Bacteroides caccae
+0.00125	1	1	11	1	3.422e-06	1796613	species	                    Bacteroides caecimuris
+0.00125	1	1	10	1	3.479e-06	28113	species	                    Bacteroides heparinolyticus
+0.00125	1	0	2	1	8.03e-07	2646097	no rank	                    unclassified Bacteroides
+0.00125	1	1	2	1	8.03e-07	2528203	species	                      Bacteroides sp. A1C1
+0.00125	1	0	18	1	1.078e-06	2005525	family	                Tannerellaceae
+0.00125	1	0	15	1	1.582e-06	375288	genus	                  Parabacteroides
+0.00125	1	0	2	1	3.555e-06	2649774	no rank	                    unclassified Parabacteroides
+0.00125	1	1	2	1	3.555e-06	2025876	species	                      Parabacteroides sp. CT06

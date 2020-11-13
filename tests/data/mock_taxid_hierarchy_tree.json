@@ -1,0 +1,776 @@
+{
+  "taxid": "1",
+  "name": "root",
+  "rank": "no rank",
+  "abundance": null,
+  "children": [
+    {
+      "taxid": "2",
+      "name": "Bacteria",
+      "rank": "superkingdom",
+      "abundance": null,
+      "children": [
+        {
+          "taxid": "1224",
+          "name": "Proteobacteria",
+          "rank": "phylum",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "28211",
+              "name": "Alphaproteobacteria",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "356",
+                  "name": "Rhizobiales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "41294",
+                      "name": "Bradyrhizobiaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "374",
+                          "name": "Bradyrhizobium",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "1325107",
+                              "name": "Bradyrhizobium zhanjiangense",
+                              "rank": "species",
+                              "abundance": 0.002354788,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "taxid": "82115",
+                      "name": "Rhizobiaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "379",
+                          "name": "Rhizobium",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "384",
+                              "name": "Rhizobium leguminosarum",
+                              "rank": "species",
+                              "abundance": null,
+                              "children": [
+                                {
+                                  "taxid": "216596",
+                                  "name": "Rhizobium leguminosarum bv. viciae 3841",
+                                  "rank": "strain",
+                                  "abundance": 0.003924647,
+                                  "children": [
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "taxid": "204458",
+                  "name": "Caulobacterales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "76892",
+                      "name": "Caulobacteraceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "75",
+                          "name": "Caulobacter",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "366602",
+                              "name": "Caulobacter sp. K31",
+                              "rank": "species",
+                              "abundance": 0.003924647,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "taxid": "1236",
+              "name": "Gammaproteobacteria",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "91347",
+                  "name": "Enterobacterales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "543",
+                      "name": "Enterobacteriaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "561",
+                          "name": "Escherichia",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "562",
+                              "name": "Escherichia coli",
+                              "rank": "species",
+                              "abundance": 0.003139717,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "taxid": "570",
+                          "name": "Klebsiella",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "573",
+                              "name": "Klebsiella pneumoniae",
+                              "rank": "species",
+                              "abundance": 0.004709576,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "taxid": "135614",
+                  "name": "Xanthomonadales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "32033",
+                      "name": "Xanthomonadaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "338",
+                          "name": "Xanthomonas",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "347",
+                              "name": "Xanthomonas oryzae",
+                              "rank": "species",
+                              "abundance": null,
+                              "children": [
+                                {
+                                  "taxid": "64187",
+                                  "name": "Xanthomonas oryzae pv. oryzae",
+                                  "rank": "strain",
+                                  "abundance": 0.009419152,
+                                  "children": [
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "taxid": "72274",
+                  "name": "Pseudomonadales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "135621",
+                      "name": "Pseudomonadaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "286",
+                          "name": "Pseudomonas",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "658641",
+                              "name": "Pseudomonas sp. R2-7-07",
+                              "rank": "species",
+                              "abundance": 0.004709576,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "taxid": "135625",
+                  "name": "Pasteurellales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "712",
+                      "name": "Pasteurellaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "75984",
+                          "name": "Mannheimia",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "75985",
+                              "name": "Mannheimia haemolytica",
+                              "rank": "species",
+                              "abundance": 0.010204082,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taxid": "1239",
+          "name": "Firmicutes",
+          "rank": "phylum",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "91061",
+              "name": "Bacilli",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "1385",
+                  "name": "Bacillales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "186822",
+                      "name": "Paenibacillaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "44249",
+                          "name": "Paenibacillus",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "1464",
+                              "name": "Paenibacillus larvae",
+                              "rank": "species",
+                              "abundance": null,
+                              "children": [
+                                {
+                                  "taxid": "147375",
+                                  "name": "Paenibacillus larvae subsp. larvae",
+                                  "rank": "strain",
+                                  "abundance": 0.000784929,
+                                  "children": [
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "taxid": "186801",
+              "name": "Clostridia",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "186802",
+                  "name": "Clostridiales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "539000",
+                      "name": "Clostridiales Family XVII. Incertae Sedis",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "73918",
+                          "name": "Thermaerobacter",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "2293838",
+                              "name": "Thermaerobacter sp. PB12/4term",
+                              "rank": "species",
+                              "abundance": 0.003139717,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taxid": "976",
+          "name": "Bacteroidetes",
+          "rank": "phylum",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "117743",
+              "name": "Flavobacteriia",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "200644",
+                  "name": "Flavobacteriales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "49546",
+                      "name": "Flavobacteriaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "1649495",
+                          "name": "Seonamhaeicola",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "1936081",
+                              "name": "Seonamhaeicola sp. S2-3",
+                              "rank": "species",
+                              "abundance": 0.000784929,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "taxid": "1853228",
+              "name": "Chitinophagia",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "1853229",
+                  "name": "Chitinophagales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "563835",
+                      "name": "Chitinophagaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "79328",
+                          "name": "Chitinophaga",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "79329",
+                              "name": "Chitinophaga pinensis",
+                              "rank": "species",
+                              "abundance": 0.000784929,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taxid": "201174",
+          "name": "Actinobacteria",
+          "rank": "phylum",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "1760",
+              "name": "Actinobacteria",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "85011",
+                  "name": "Streptomycetales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "2062",
+                      "name": "Streptomycetaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "1883",
+                          "name": "Streptomyces",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "54571",
+                              "name": "Streptomyces venezuelae",
+                              "rank": "species",
+                              "abundance": 0.005494505,
+                              "children": [
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taxid": "10239",
+      "name": "Viruses",
+      "rank": "superkingdom",
+      "abundance": null,
+      "children": [
+        {
+          "taxid": "10442",
+          "name": "Baculoviridae",
+          "rank": "family",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "558017",
+              "name": "Betabaculovirus",
+              "rank": "genus",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "10462",
+                  "name": "Trichoplusia ni granulovirus",
+                  "rank": "species",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "1916701",
+                      "name": "Trichoplusia ni granulovirus LBIV-12",
+                      "rank": "strain",
+                      "abundance": 0.029827316,
+                      "children": [
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "taxid": "2169745",
+                  "name": "Mythimna unipuncta granulovirus A",
+                  "rank": "species",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "36355",
+                      "name": "Pseudalatia unipuncta granulovirus",
+                      "rank": "strain",
+                      "abundance": 0.017268446,
+                      "children": [
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "taxid": "489830",
+                  "name": "Helicoverpa armigera granulovirus",
+                  "rank": "species",
+                  "abundance": 0.153846154,
+                  "children": [
+                  ]
+                },
+                {
+                  "taxid": "51677",
+                  "name": "Xestia c-nigrum granulovirus",
+                  "rank": "species",
+                  "abundance": 0.253532182,
+                  "children": [
+                  ]
+                }
+              ]
+            },
+            {
+              "taxid": "558016",
+              "name": "Alphabaculovirus",
+              "rank": "genus",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "1962501",
+                  "name": "Agrotis segetum nucleopolyhedrovirus A",
+                  "rank": "species",
+                  "abundance": 0.007849294,
+                  "children": [
+                  ]
+                },
+                {
+                  "taxid": "204440",
+                  "name": "Mamestra configurata nucleopolyhedrovirus B",
+                  "rank": "species",
+                  "abundance": 0.019623234,
+                  "children": [
+                  ]
+                },
+                {
+                  "taxid": "207830",
+                  "name": "Mamestra configurata nucleopolyhedrovirus A",
+                  "rank": "species",
+                  "abundance": 0.332025118,
+                  "children": [
+                  ]
+                },
+                {
+                  "taxid": "307467",
+                  "name": "Euproctis pseudoconspersa nucleopolyhedrovirus",
+                  "rank": "species",
+                  "abundance": 0.003139717,
+                  "children": [
+                  ]
+                },
+                {
+                  "taxid": "78219",
+                  "name": "Mamestra brassicae multiple nucleopolyhedrovirus",
+                  "rank": "species",
+                  "abundance": 0.067503925,
+                  "children": [
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taxid": "464095",
+          "name": "Picornavirales",
+          "rank": "order",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "12058",
+              "name": "Picornaviridae",
+              "rank": "family",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "1511778",
+                  "name": "Mischivirus",
+                  "rank": "genus",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "2003498",
+                      "name": "Mischivirus B",
+                      "rank": "species",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "2003500",
+                          "name": "Bat picornavirus BatPV/V1/13 Hun",
+                          "rank": "strain",
+                          "abundance": 0.000784929,
+                          "children": [
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "taxid": "76804",
+          "name": "Nidovirales",
+          "rank": "order",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "11118",
+              "name": "Coronaviridae",
+              "rank": "family",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "694002",
+                  "name": "Betacoronavirus",
+                  "rank": "genus",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "290028",
+                      "name": "Human coronavirus HKU1",
+                      "rank": "species",
+                      "abundance": 0.000784929,
+                      "children": [
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "taxid": "2759",
+      "name": "Eukaryota",
+      "rank": "superkingdom",
+      "abundance": null,
+      "children": [
+        {
+          "taxid": "4890",
+          "name": "Ascomycota",
+          "rank": "phylum",
+          "abundance": null,
+          "children": [
+            {
+              "taxid": "4891",
+              "name": "Saccharomycetes",
+              "rank": "class",
+              "abundance": null,
+              "children": [
+                {
+                  "taxid": "4892",
+                  "name": "Saccharomycetales",
+                  "rank": "order",
+                  "abundance": null,
+                  "children": [
+                    {
+                      "taxid": "4893",
+                      "name": "Saccharomycetaceae",
+                      "rank": "family",
+                      "abundance": null,
+                      "children": [
+                        {
+                          "taxid": "33170",
+                          "name": "Eremothecium",
+                          "rank": "genus",
+                          "abundance": null,
+                          "children": [
+                            {
+                              "taxid": "33169",
+                              "name": "Eremothecium gossypii",
+                              "rank": "species",
+                              "abundance": null,
+                              "children": [
+                                {
+                                  "taxid": "284811",
+                                  "name": "Eremothecium gossypii ATCC 10895",
+                                  "rank": "strain",
+                                  "abundance": 0.007849294,
+                                  "children": [
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

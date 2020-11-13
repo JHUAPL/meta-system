@@ -1,0 +1,37 @@
+# Ignore Sensitive Folders...
+.git
+
+# Ignore IDE/IntelliJ Files
+.idea
+*.iml
+
+# Ignore Node Modules used locally
+app/node_modules
+
+# Ignore Compiled Vue App
+app/dist
+app/public
+
+# Ignore Data Directory (Exclude some things)
+data
+!data/sample_abundance_profile.tsv
+!data/fastq/sample.fastq
+
+# Ignore Test Directory
+tests
+
+# Ignore Taxonomic dump artifacts
+system/metrics/evaluation/parsers/taxdump
+system/metrics/evaluation/parsers/tmp-*
+
+# Ignore Python Virtualenvs and Binary Files (Go Syntax)
+venv
+**/__pycache__
+**/*.py[cod]
+
+# Ignore Other Specific Stuff
+docker-compose.yaml
+Dockerfile
+Makefile
+.dockerignore
+.gitignore

@@ -1,0 +1,578 @@
+/*
+ * # **********************************************************************
+ * # Copyright (C) 2020 Johns Hopkins University Applied Physics Laboratory
+ * #
+ * # All Rights Reserved.
+ * # For any other permission, please contact the Legal Office at JHU/APL.
+ *
+ * # Licensed under the Apache License, Version 2.0 (the "License");
+ * # you may not use this file except in compliance with the License.
+ * # You may obtain a copy of the License at
+ *
+ * #    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * # Unless required by applicable law or agreed to in writing, software
+ * # distributed under the License is distributed on an "AS IS" BASIS,
+ * # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * # See the License for the specific language governing permissions and
+ * # limitations under the License.
+ * # **********************************************************************
+ */
+
+.custom-file-label::after {
+  background: #052c57 !important;
+  color: rgb(255, 255, 255);
+}
+
+.form-group.required .control-label:after {
+  content: "*";
+  color: red;
+}
+
+input {
+  text-align: center;
+}
+
+
+.x-axis {
+  font-size: 0.9em;
+}
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  display: initial;
+  text-align: center;
+  width: 450px;
+  font-size: 1.3em;
+}
+
+h3 {
+  display: block;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.legendRect, .dimension text {
+  cursor: pointer;
+}
+
+.resources_table_div, .comparison_table_div {
+  overflow: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#comparison_table {
+  display: table;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+
+#comparison_table table thead th .text {
+  position: absolute;
+  top: -20px;
+  z-index: 2;
+  height: 200px;
+  width: 35%;
+  border: 1px solid red;
+}
+
+
+
+#comparison_table thead th, #resources_table thead th {
+  cursor: pointer;
+}
+
+#comparison_table th:hover, #comparison_table tbody tr:hover, #resources_table th:hover, #resources_table tbody tr:hover {
+  background-color: #2b57b9 !important;
+  fill: #2b57b9 !important;
+  color: #fff !important;
+}
+#comparison_table.cursor tr {
+  cursor: pointer;
+}
+
+
+
+
+.tooltip {
+  font-family: Arial, sans-serif !important;
+  position: absolute;
+  text-align: center;
+  max-width: 300px;
+  padding: 10px;
+  background: #efefef;
+  border: 0px;
+  border-radius: 4px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-weight: 200;
+  color: #fff;
+  background: #232B2B;
+  box-shadow: 0px 3px 1px rgba(39, 39, 40, 0.6);
+  font-size: 1.1em;
+}
+
+.popover {
+  font-size: 1.1em;
+}
+
+.inactive {
+  color: #fff000;
+}
+
+.event-active {
+  font-weight: bold;
+  color: #78CB5B;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.vue-dropzone:hover {
+  background-color: #F6F6F6;
+}
+
+.dropzone.dz-clickable {
+  cursor: pointer;
+}
+
+.vue-dropzone {
+  border: 2px solid #E5E5E5;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.2px;
+  color: #777;
+  transition: .2s linear;
+}
+
+.dropzone {
+  min-height: 10px;
+  background: white;
+  padding: 20px 20px;
+}
+
+.dropzone, .dropzone * {
+  box-sizing: border-box;
+}
+
+.dropzone .dz-preview {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 16px;
+}
+
+.dropzone.dz-clickable * {
+  cursor: default;
+}
+
+.dropzone .dz-preview .dz-image {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 12px solid rgb(70, 77, 138);
+  display: block;
+}
+
+.vue-dropzone > .dz-preview .dz-image img:not([src]) {
+  width: 200px;
+  height: 200px;
+}
+
+.dropzone .dz-preview.dz-file-preview .dz-details {
+  opacity: 1;
+}
+
+.vue-dropzone > .dz-preview .dz-details {
+  bottom: 0;
+  top: 0;
+  background-color: #147dec;
+  transition: opacity .2s linear;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  text-align: right;
+}
+
+.dropzone .dz-preview .dz-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 20px;
+  min-width: 100%;
+  max-width: 100%;
+  padding-top: 1em;
+  text-align: center;
+  color: rgb(242, 240, 248);
+  line-height: 100%;
+}
+
+.dropzone .dz-preview .dz-details .dz-size {
+  margin-bottom: 1em;
+  font-size: 17px;
+  color: rgb(242, 240, 248);
+}
+
+.dropzone .dz-preview.dz-processing .dz-progress {
+  opacity: 3;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.dropzone .dz-preview .dz-progress {
+  opacity: 1;
+  z-index: 1000;
+  pointer-events: none;
+  position: absolute;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  margin-top: -8px;
+  width: 80px;
+  margin-left: -40px;
+  background: rgba(255, 252, 252, 0.9);
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.vue-dropzone > .dz-preview .dz-progress .dz-upload {
+  background: #cccccc;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(204, 204, 204);
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+  background: rgb(47, 6, 230);
+  background-image: linear-gradient(rgb(47, 6, 230), rgb(68, 68, 68));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background: linear-gradient(to bottom, #666, #444);
+  background-image: linear-gradient(rgb(47, 6, 230), rgb(47, 6, 230));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  -webkit-transition: width 300ms ease-in-out;
+  -moz-transition: width 300ms ease-in-out;
+  -ms-transition: width 300ms ease-in-out;
+  -o-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
+  transition-property: width;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+.vue-dropzone > .dz-preview .dz-error-message {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.dropzone .dz-preview .dz-error-message {
+  pointer-events: none;
+  z-index: 1000;
+  position: absolute;
+  display: block;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 13px;
+  top: 130px;
+  left: -10px;
+  width: 140px;
+  background: #be2626;
+  background-image: linear-gradient(rgb(190, 38, 38), rgb(169, 34, 34));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  background: linear-gradient(to bottom, #be2626, #a92222);
+  background-image: linear-gradient(rgb(190, 38, 38), rgb(169, 34, 34));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  padding: 0.5em 1.2em;
+  padding-top: 0.5em;
+  padding-right: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 1.2em;
+  color: white;
+}
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+  -webkit-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: passing-through 3s cubic-bezier(0.77, 0, 0.175, 1);
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: passing-through;
+}
+
+.vue-dropzone > .dz-preview .dz-success-mark, .vue-dropzone > .dz-preview .dz-error-mark {
+  margin-left: auto;
+  margin-top: auto;
+  width: 100%;
+  top: 35%;
+  left: 0;
+}
+
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {
+  pointer-events: none;
+  opacity: 0;
+  z-index: 500;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-left: -27px;
+  margin-top: -27px;
+}
+
+.vue-dropzone > .dz-preview .dz-success-mark svg, .vue-dropzone > .dz-preview .dz-error-mark svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+
+.vue-dropzone > .dz-preview .dz-success-mark, .vue-dropzone > .dz-preview .dz-error-mark {
+  margin-left: auto;
+  margin-top: auto;
+  width: 100%;
+  top: 35%;
+  left: 0;
+}
+
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark {
+  pointer-events: none;
+  opacity: 0;
+  z-index: 500;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-left: -27px;
+  margin-top: -27px;
+}
+
+.vue-dropzone > .dz-preview .dz-success-mark svg, .vue-dropzone > .dz-preview .dz-error-mark svg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropzone .dz-preview .dz-success-mark svg, .dropzone .dz-preview .dz-error-mark svg {
+  display: block;
+  width: 54px;
+  height: 54px;
+}
+
+.vue-dropzone > .dz-preview .dz-remove {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  margin-left: 40px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  bottom: 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.1px;
+  opacity: 1;
+}
+
+.dropzone .dz-preview .dz-remove {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.dropzone.dz-clickable * {
+  cursor: default;
+}
+
+#customdropzone .dz-success-mark, .dz-error-mark, .dz-remove {
+  display: all;
+}
+
+.dropzone.dz-started .dz-message {
+  display: none;
+}
+
+.dropzone .dz-message {
+  text-align: center;
+  margin: 2em 0;
+  margin-top: 2em;
+  margin-right: 0px;
+  margin-bottom: 2em;
+  margin-left: 0px;
+}
+
+.dropzone.dz-clickable .dz-message, .dropzone.dz-clickable .dz-message * {
+  cursor: pointer;
+}
+
+.dz-filename {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.tooltip-inner {
+  background: #272525;
+  color: #f5f5f5;
+
+}
+
+.removeThreshold {
+  background: #fff;
+  opacity: 0.75;
+  color: grey;
+  border-color: #fff;
+}
+
+.updateThreshold {
+  background: #fff;
+  opacity: 0.75;
+  color: grey;
+  border-color: #fff;
+}
+
+.updateThreshold:hover {
+  background: orange;
+  color: #fff;
+  border-color: orange;
+}
+
+.removeThreshold:hover, .removeThreshold.active {
+  background: #d1ecf1 !important;
+  color: black !important;
+  border-color: #d1ecf1 !important;
+  box-shadow: none;
+}
+
+.code.white, .code.white pre.code, .code.white .line_holder .line_content {
+  background-color: #fff;
+  color: #2e2e2e;
+}
+
+.md pre {
+  margin-bottom: 16px;
+  font-size: 13px;
+  line-height: 1.6em;
+  overflow-x: auto;
+  border-radius: 2px;
+}
+
+pre {
+  font-family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+  display: block;
+  padding: 10px 0px 0px;
+  margin: 24px 100% 24px 1%;
+  font-size: 13px;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #2e2e2e;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+}
+
+pre {
+  display: block;
+  font-size: 90%;
+  color: #2e2e2e;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+pre, code, kbd, samp {
+  font-family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
+  font-size: 1em;
+}
+
+

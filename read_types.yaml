@@ -1,0 +1,18 @@
+r9:
+  producturl: "https://store.nanoporetech.com/us/flowcells/spoton-flow-cell-mk-i-r9-4.html"
+  simurl: "https://github.com/liyu95/DeepSimulator"
+
+miseq:
+  producturl: "https://www.illumina.com/systems/sequencing-platforms/miseq.html"
+  simurl: "https://github.com/HadrienG/InSilicoSeq"
+
+iseq:
+  producturl: "https://www.illumina.com/systems/sequencing-platforms/iseq.html"
+  simurl: "https://github.com/HadrienG/InSilicoSeq"
+
+flg:
+  producturl: "https://nanoporetech.com/products/flongle"
+  simurl: "https://github.com/liyu95/DeepSimulator"
+
+
+

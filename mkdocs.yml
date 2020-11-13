@@ -1,0 +1,7 @@
+site_name: Metagenomic Evaluation, Testing, and Analysis System
+nav:
+  - Home: index.md
+  - Contributing: contributing.md
+  - Adding Biocontainers: add_biocontainers.md
+theme:
+  name: readthedocs

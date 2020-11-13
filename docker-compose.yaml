@@ -1,0 +1,92 @@
+version: '2.3'
+
+networks:
+  meta_docker_net:
+
+volumes:
+  meta_docker_data:
+  meta_docker_certs_ca:
+  meta_docker_certs_client:
+
+services:
+
+  mongodb:
+    image: mongo:3.6
+    init: true
+    ports:
+      - "127.0.0.1:27018:27017"
+    networks:
+      default:
+        aliases:
+          - mongo
+    volumes:
+      - "./data/mongodb:/data/db"
+    command: mongod --noauth --bind_ip 0.0.0.0 --port 27017
+    restart: unless-stopped
+
+  meta_docker:
+    image: docker:stable-dind
+    privileged: true
+    networks:
+      meta_docker_net:
+        aliases:
+          - docker
+    volumes:
+      - ./data:/data
+      - /srv/databases:/srv/databases
+      - meta_docker_data:/var/lib/docker
+      - meta_docker_certs_ca:/certs/ca
+      - meta_docker_certs_client:/certs/client
+    environment:
+      DOCKER_TLS_CERTDIR: "/certs"
+    command: "--dns 8.8.8.8"
+    restart: unless-stopped
+
+  meta_docker_client:
+    image: docker:stable
+    depends_on:
+      - meta_docker
+    networks:
+      - meta_docker_net
+    volumes:
+      - ./data/docker:/data/images
+      - ./load_images.sh:/load_images.sh
+      - meta_docker_certs_client:/certs/client:ro
+    environment:
+      DOCKER_TLS_CERTDIR: "/certs"
+    command: version
+
+  meta_system:
+    image: meta_system
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    depends_on:
+      - mongodb
+      - meta_docker
+    ports:
+      - "0.0.0.0:5000:5000"
+    networks:
+      - default
+      - meta_docker_net
+    volumes:
+      - ./data:/data
+      - /srv/databases:/srv/databases
+      - meta_docker_certs_client:/certs/client:ro
+    environment:
+      META_DEBUG: "false"
+      META_SERVER_BIND: "0.0.0.0"
+      META_SERVER_PORT: 5000
+      META_DATA_DIR: "/data"
+      META_MONGO_HOST: "mongodb"
+      META_MONGO_PORT: 27017
+      META_BIOCONTAINER_DB_DIR: "/srv/databases"
+      UID_REMAP: ${UID_REMAP:-999}
+      GID_REMAP: ${GID_REMAP:-999}
+      DOCKER_HOST: "tcp://docker:2376"
+      DOCKER_TLS_CERTDIR: "/certs"
+      DOCKER_CERT_PATH: "/certs/client"
+      DOCKER_TLS_VERIFY: "1"
+    command: ["python3", "run_app.py"]  # ["circusd", "circus.ini"]
+    restart: unless-stopped

@@ -1,0 +1,49 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "axios": "^0.19.2",
+    "bootstrap-vue": "^2.17.3",
+    "core-js": "^3.6.5",
+    "d3": "^5.16.0",
+    "lodash": "^4.17.20",
+    "mdbvue": "^6.7.1",
+    "moment-duration-format": "^2.3.2",
+    "sweetalert": "^2.1.2",
+    "vee-validate": "^3.4.1",
+    "vue": "^2.6.12",
+    "vue-loading-spinner": "^1.0.11",
+    "vue-moment": "^4.1.0",
+    "vue-multiselect": "^2.1.6",
+    "vue-numerals": "^3.1.1",
+    "vue-router": "^3.4.6",
+    "vue-sweetalert2": "^3.0.8",
+    "vue2-dropzone": "^3.6.0",
+    "vue2-touch-events": "^2.3.2",
+    "vuelidate": "^0.7.5",
+    "vuex": "^3.5.1",
+    "vuex-persistedstate": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.7",
+    "@vue/cli-plugin-eslint": "~4.5.7",
+    "@vue/cli-plugin-router": "~4.5.7",
+    "@vue/cli-plugin-vuex": "~4.5.7",
+    "@vue/cli-service": "~4.5.7",
+    "babel-eslint": "~10.1.0",
+    "eslint": "~6.7.2",
+    "eslint-plugin-vue": "~6.2.2",
+    "sass": "~1.27.0",
+    "sass-loader": "~8.0.2",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

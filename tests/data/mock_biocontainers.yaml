@@ -1,0 +1,33 @@
+foo1:
+  image: foo1:image
+  link: https://foobar.com
+  database_name: foo1_db
+  file_formats:
+    - png
+  download:
+    - echo "download"
+  build:
+    - echo "Build step 1 {{VAR_CONTAINER_DB}} with {{VAR_GENOMIC_FNA_FILEPATH}}"
+    - echo "Build step 2 {{VAR_CONTAINER_DB}} with {{VAR_PROTEIN_FAA_FILEPATH}}"
+  classify:
+    - echo "Classifying {{VAR_SEQUENCE_FILEPATH}}"
+  report:
+    - echo "Writing to {{VAR_RESULT_FILEPATH}}"
+    - echo "Moving {{VAR_RESULT_FILEPATH}} to {{VAR_REPORT_FILEPATH}}"
+
+foo2:
+  image: foo1:image
+  link: https://foobar.com
+  database_name: foo2_db
+  file_formats:
+    - png
+  download:
+    - echo "download"
+  build:
+    - echo "Build step 1 {{VAR_CONTAINER_DB}} with {{VAR_GENOMIC_FNA_FILEPATH}}"
+    - echo "Build step 2 {{VAR_CONTAINER_DB}} with {{VAR_PROTEIN_FAA_FILEPATH}}"
+  classify:
+    - echo "Classifying {{VAR_SEQUENCE_FILEPATH}}"
+  report:
+    - echo "Writing to {{VAR_RESULT_FILEPATH}}"
+    - echo "Moving {{VAR_RESULT_FILEPATH}} to {{VAR_REPORT_FILEPATH}}"

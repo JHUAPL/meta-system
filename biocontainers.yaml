@@ -1,0 +1,173 @@
+kraken:
+  image: quay.io/biocontainers/kraken:1.1.1--pl526hc9558a2_4
+  link: http://ccb.jhu.edu/software/kraken/MANUAL.html
+  database_name: kraken_db
+  file_formats:
+    - fasta
+    - fastq
+  download:
+    - kraken-build --db {{VAR_CONTAINER_DB}} --download-taxonomy
+    - kraken-build --db {{VAR_CONTAINER_DB}} --download-library archaea --download-library bacteria --download-library viral --use-wget
+  build:
+    - kraken-build --db {{VAR_CONTAINER_DB}} --build
+  classify:
+    - kraken --db {{VAR_CONTAINER_DB}} --output {{VAR_RESULT_FILEPATH}} {{VAR_SEQUENCE_FILEPATH}}
+  report:
+    - kraken-report --db {{VAR_CONTAINER_DB}} {{VAR_RESULT_FILEPATH}}
+
+kraken2:
+  image: quay.io/biocontainers/kraken2:2.0.8_beta--pl526hc9558a2_1
+  link: https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
+  database_name: kraken2_db
+  file_formats:
+    - fasta
+    - fastq
+  download:
+  build:
+    - kraken2-build --standard --db {{VAR_CONTAINER_DB}} --threads 24 --use-ftp
+  classify:
+    - kraken2 --quick --db {{VAR_CONTAINER_DB}} --threads 24 --output {{VAR_RESULT_FILEPATH}} --report {{VAR_REPORT_FILEPATH}} {{VAR_SEQUENCE_FILEPATH}}
+  report:
+
+krakenuniq:
+  image: quay.io/biocontainers/krakenuniq:0.5.8--pl526he513fc3_3
+  link: https://github.com/fbreitwieser/krakenuniq
+  database_name: krakenuniq_db
+  file_formats:
+    - fastq
+  download:
+    - krakenuniq-download --db {{VAR_CONTAINER_DB}} taxonomy
+    - krakenuniq-download --db {{VAR_CONTAINER_DB}}  --threads 24 refseq/bacteria refseq/archaea
+  build:
+    - krakenuniq-build --db {{VAR_CONTAINER_DB}}
+  classify:
+    - krakenuniq --db {{VAR_CONTAINER_DB}} --threads 10 --fastq-input {{VAR_SEQUENCE_FILEPATH}} --output {{VAR_RESULT_FILEPATH}} --report-file {{VAR_REPORT_FILEPATH}}
+  report:
+
+centrifuge:
+  image: quay.io/biocontainers/centrifuge:1.0.4_beta--he513fc3_5
+  link: https://github.com/infphilo/centrifuge/blob/master/MANUAL.markdown
+  database_name: centrifuge_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - centrifuge-build --conversion-table /centrifuge_db/rs_complete_genome_latest-genomic.cf.conv --taxonomy-tree /centrifuge_db/nodes.dmp --name-table /centrifuge_db/names.dmp {{VAR_GENOMIC_FNA_FILEPATH}} {{VAR_CONTAINER_DB}}/database
+  classify:
+    - centrifuge -x {{VAR_CONTAINER_DB}}/database -U {{VAR_SEQUENCE_FILEPATH}} -S {{VAR_RESULT_FILEPATH}}
+  report:
+    - centrifuge-kreport -x {{VAR_CONTAINER_DB}}/database {{VAR_RESULT_FILEPATH}}  # writes centrifuge.report file in same location as centrifuge.result
+
+diamond:
+  image: quay.io/biocontainers/diamond:0.9.30--h56fc30b_0
+  link: http://www.diamondsearch.org/index.php
+  database_name: diamond_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - diamond makedb --in {{VAR_PROTEIN_FAA_FILEPATH}} --taxonmap {{VAR_CONTAINER_DB}}/taxonomy/accession2taxid/prot.accession2taxid --taxonnodes {{VAR_CONTAINER_DB}}/taxonomy/nodes.dmp --taxonnames {{VAR_CONTAINER_DB}}/taxonomy/names.dmp -d {{VAR_CONTAINER_DB}}/diamond -p 10
+  classify:
+    - diamond blastx -d {{VAR_CONTAINER_DB}}/diamond.dmnd -q {{VAR_SEQUENCE_FILEPATH}} -o {{VAR_REPORT_FILEPATH}} -p 10 -f 102
+  report:
+
+bracken:
+  image: quay.io/biocontainers/bracken:2.5--py36hc9558a2_2
+  link: https://github.com/jenniferlu717/Bracken
+  database_name: kraken2_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - bracken-build -d {{VAR_CONTAINER_DB}} -t 24
+  classify:
+    - kraken2 --quick --db {{VAR_CONTAINER_DB}} --threads 24 --report {{VAR_RESULT_FILEPATH}} {{VAR_SEQUENCE_FILEPATH}}
+    - bracken -d {{VAR_CONTAINER_DB}} -i {{VAR_RESULT_FILEPATH}} -o {{VAR_REPORT_FILEPATH}}
+    - /bin/bash -c "mv $(printf "{{VAR_RESULT_FILEPATH}}" | sed "s/bracken.result/bracken_bracken.result/") {{VAR_REPORT_FILEPATH}}"
+  report:
+
+mash:
+  image: quay.io/biocontainers/mash:2.2.2--h3d38be6_1
+  link: https://mash.readthedocs.io/en/latest/
+  database_name: mash_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - mash sketch -o {{VAR_CONTAINER_DB}}/reference {{VAR_GENOMIC_FNA_FILEPATH}}
+  classify:
+    - /bin/bash -c "touch {{VAR_REPORT_FILEPATH}} && mash screen -w -p 4 {{VAR_CONTAINER_DB}}/reference.msh {{VAR_SEQUENCE_FILEPATH}} > {{VAR_REPORT_FILEPATH}}"
+  report:
+
+mmseqs2:
+  image: quay.io/biocontainers/mmseqs2:11.e1a1c--h2d02072_0
+  link: https://github.com/soedinglab/mmseqs2
+  database_name: mmseqs2_db
+  file_formats:
+    - fastq
+  download:
+  build:
+  classify:
+    - mmseqs easy-taxonomy {{VAR_SEQUENCE_FILEPATH}} {{VAR_CONTAINER_DB}}/db {{VAR_RESULT_FILEPATH}} {{VAR_CONTAINER_DB}}/tmp --search-type 3
+    - /bin/bash -c "mv {{VAR_RESULT_FILEPATH}}_tophit_report {{VAR_REPORT_FILEPATH}}"
+  report:
+
+blastn:
+  image: quay.io/biocontainers/hs-blastn:0.0.5--h470a237_1
+  link: https://github.com/chenying2016/queries/tree/master/hs-blastn-src
+  database_name: blastn_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - makeblastdb -in {{VAR_GENOMIC_FNA_FILEPATH}} -input_type fasta -dbtype nucl
+    - windowmasker -in {{VAR_GENOMIC_FNA_FILEPATH}} -infmt blastdb -mk_counts -out {{VAR_GENOMIC_FNA_FILEPATH}}.counts
+    - windowmasker -in {{VAR_GENOMIC_FNA_FILEPATH}}.counts -sformat obinary -out {{VAR_GENOMIC_FNA_FILEPATH}}.counts.obinary -convert
+    - hs-blastn index {{VAR_GENOMIC_FNA_FILEPATH}}
+    - /bin/bash -c "mv {{VAR_GENOMIC_FNA_FILEPATH}}.* {{VAR_CONTAINER_DB}}"
+  classify:
+    - hs-blastn align -db {{VAR_CONTAINER_DB}}/rs_complete_genome_latest-genomic.fna -window_masker_db {{VAR_CONTAINER_DB}}/rs_complete_genome_latest-genomic.fna.counts.obinary -query {{VAR_SEQUENCE_FILEPATH}} -out {{VAR_REPORT_FILEPATH}} -outfmt 6
+  report:
+
+kaiju:
+  image: quay.io/biocontainers/kaiju:1.7.3--h8b12597_1
+  link: https://github.com/bioinformatics-centre/kaiju
+  database_name: kaiju_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - kaiju-mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o {{VAR_CONTAINER_DB}}/proteins {{VAR_PROTEIN_FAA_FILEPATH}}
+    - kaiju-mkfmi {{VAR_CONTAINER_DB}}/proteins
+  classify:
+    - kaiju -t {{VAR_CONTAINER_DB}}/taxonomy/nodes.dmp -f {{VAR_CONTAINER_DB}}/proteins.fmi -i {{VAR_SEQUENCE_FILEPATH}} -o {{VAR_RESULT_FILEPATH}}
+  report:
+    - kaiju2table -t {{VAR_CONTAINER_DB}}/taxonomy/nodes.dmp -n {{VAR_CONTAINER_DB}}/taxonomy/names.dmp -r species -o {{VAR_REPORT_FILEPATH}} {{VAR_RESULT_FILEPATH}}
+
+kallisto:
+  image: quay.io/biocontainers/kallisto:0.46.2--h4f7b962_1
+  link: https://pachterlab.github.io/kallisto/manual
+  database_name: kallisto_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - kallisto index -i {{VAR_CONTAINER_DB}}/kallisto.idx {{VAR_GENOMIC_FNA_FILEPATH}}
+  classify:
+    - kallisto quant -i {{VAR_CONTAINER_DB}}/kallisto.idx -o {{VAR_RESULT_FILEPATH}} --single -l 200 -s 20 {{VAR_SEQUENCE_FILEPATH}}
+    - /bin/bash -c "mv {{VAR_RESULT_FILEPATH}}/abundance.tsv {{VAR_REPORT_FILEPATH}}"
+  report:
+
+clark:
+  image: quay.io/biocontainers/clark:1.2.6.1--hc9558a2_0
+  link: http://clark.cs.ucr.edu/Overview/
+  database_name: clark_db
+  file_formats:
+    - fastq
+  download:
+  build:
+    - /usr/local/opt/clark/set_targets.sh {{VAR_CONTAINER_DB}} bacteria viruses fungi
+  classify:
+    - /bin/bash -c "/usr/local/opt/clark/set_targets.sh {{VAR_CONTAINER_DB}} bacteria viruses fungi; /usr/local/opt/clark/classify_metagenome.sh -O {{VAR_SEQUENCE_FILEPATH}} -R {{VAR_REPORT_FILEPATH}}"
+    - /bin/bash -c "mv {{VAR_REPORT_FILEPATH}}.csv {{VAR_REPORT_FILEPATH}}"
+  report:
